@@ -1,0 +1,12 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "marwa-d": {
+      "appLocation": ".",
+      "apiLocation": "/",
+      "outputLocation": "/",
+      "apiLanguage": "node",
+      "apiVersion": "16"
+    }
+  }
+}
