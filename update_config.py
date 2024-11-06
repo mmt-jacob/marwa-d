@@ -7,7 +7,7 @@ Python script for use in command line to update environment file from database.
 
 """
 
-__author__ = "John Dorian for Sai Systems Technologies"
+__author__ = ""
 __copyright__ = "Copyright 2019"
 __version__ = "1.0.0.0"
 
