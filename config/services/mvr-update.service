@@ -1,0 +1,18 @@
+[Unit]
+Description=Multi-View Reports configuration update from database
+After=network.target
+Before=mvr-server.service
+Before=mvr-client.service
+Before=mvr-reports.service
+
+[Service]
+Type=simple
+User=ventec
+RootDirectory=/
+WorkingDirectory=/home/ventec/vocsn-web
+ExecStart=/home/ventec/vocsn-web/mvr-update-config
+
+[Install]
+WantedBy=multi-user.target
+WantedBy=mvr-server.service
+WantedBy=mvr-reports.service

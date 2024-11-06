@@ -1,0 +1,472 @@
+{
+  "ParameterLabel": {
+    "6013": {
+      "long": "Reset To Factory Defaults",
+      "short": "Factory Defaults"
+    },
+    "2": {
+      "long": "Clinician Unlock Required?",
+      "short": "Unlock Required?"
+    },
+    "3": {
+      "long": "Activate O2 Concentrator",
+      "short": "O2 Concentrator"
+    },
+    "4": {
+      "long": "Activate Cough Assist",
+      "short": "Cough"
+    },
+    "5": {
+      "long": "Activate Suction",
+      "short": "Suction"
+    },
+    "6": {
+      "long": "Activate Nebulizer",
+      "short": "Nebulizer"
+    },
+    "7": {
+      "long": "Ventilation Preset 1 Enable",
+      "short": "Ventilation Preset 1"
+    },
+    "8": {
+      "long": "Ventilation Preset 2 Enable",
+      "short": "Ventilation Preset 2"
+    },
+    "9": {
+      "long": "Ventilation Preset 3 Enable",
+      "short": "Ventilation Preset 3"
+    },
+    "14502": {
+      "long": "Ventilation Preset Label",
+      "short": "Ventilation Preset Label"
+    },
+    "14503": {
+      "long": "Oxygen Preset Label",
+      "short": "Oxygen Preset Label"
+    },
+    "14504": {
+      "long": "Cough Preset Label",
+      "short": "Cough Preset Label"
+    },
+    "13": {
+      "long": "Circuit Type",
+      "short": "Circuit Type"
+    },
+    "14": {
+      "long": "Humidification",
+      "short": "Humidification"
+    },
+    "72": {
+      "long": "FiO2 Monitor",
+      "short": "FiO2 Monitor"
+    },
+    "73": {
+      "long": "Patient Type",
+      "short": "Patient Type"
+    },
+    "91": {
+      "long": "System Date/Time",
+      "short": "Date/Time"
+      },
+    "92": {
+      "long": "System Date/Time",
+      "short": "Date/Time"
+      },
+    "94": {
+      "long": "Language",
+      "short": "Language"
+    },
+    "89": {
+      "long": "Vacuum Default",
+      "short": "Vacuum Default"
+      },
+    "22": {
+      "long": "Ventilation Preset",
+      "short": "Ventilation Preset"
+      },
+    "23": {
+      "long": "Alarm Volume",
+      "short": "Alarm Volume"
+    },
+    "24": {
+      "long": "Mode",
+      "short": "Mode"
+    },
+    "25": {
+      "long": "Breath Rate",
+      "short": "Breath Rate"
+    },
+    "26": {
+      "long": "Inspiratory Time",
+      "short": "Inspiratory Time"
+    },
+    "27": {
+      "long": "Volume Targeted",
+      "short": "Volume Targeted"
+    },
+    "28": {
+      "long": "Tidal Volume",
+      "short": "Tidal Volume"
+    },
+    "29": {
+      "long": "Pressure Control",
+      "short": "Pressure Control"
+    },
+    "30": {
+      "long": "PEEP/EPAP",
+      "short": "PEEP/EPAP"
+    },
+    "32": {
+      "long": "IPAP",
+      "short": "IPAP"
+    },
+    "33": {
+      "long": "Pressure Support",
+      "short": "Pressure Support"
+    },
+    "34": {
+      "long": "Flow Trigger",
+      "short": "Flow Trigger"
+    },
+    "35": {
+      "long": "PC Flow Termination",
+      "short": "PC Flow Termination"
+    },
+    "36": {
+      "long": "Flow Cycle",
+      "short": "Flow Cycle"
+    },
+    "37": {
+      "long": "Time Cycle",
+      "short": "Time Cycle"
+    },
+    "38": {
+      "long": "Rise Time",
+      "short": "Rise Time"
+    },
+    "39": {
+      "long": "Apnea Rate",
+      "short": "Apnea Rate"
+    },
+    "40": {
+      "long": "Leak Compensation",
+      "short": "Leak Compensation"
+    },
+    "41": {
+      "long": "FiO2",
+      "short": "FiO2"
+    },
+    "42": {
+      "long": "Sigh",
+      "short": "Sigh"
+    },
+    "43": {
+      "long": "High Pressure Delay",
+      "short": "High Pressure Delay"
+    },
+    "95": {
+      "long": "High Flow",
+      "short": "High Flow"
+    },
+    "96": {
+      "long": "Flow",
+      "short": "Flow"
+    },
+    "100": {
+      "long": "Pres. Minimum",
+      "short": "Pres. Minimum"
+    },
+    "101": {
+      "long": "Pres. Adj. Rate",
+      "short": "Pres. Adj. Rate"
+    },
+    "45": {
+      "long": "O2 Flow Equivalent",
+      "short": "O2 Flow Equivalent"
+    },
+    "75": {
+      "long": "Cough Preset 1 Enable",
+      "short": "Cough Preset 1 Enable"
+    },
+    "77": {
+      "long": "Cough Preset 2 Enable",
+      "short": "Cough Preset 2 Enable"
+    },
+    "79": {
+      "long": "Cough Preset 3 Enable",
+      "short": "Cough Preset 3 Enable"
+    }, 
+    "81": {
+      "long": "O2 Preset 1 Enable",
+      "short": "O2 Preset 1 Enable"
+    },
+    "82": {
+      "long": "O2 Preset 2 Enable",
+      "short": "O2 Preset 2 Enable"
+    },
+    "83": {
+      "long": "O2 Preset 3 Enable",
+      "short": "O2 Preset 3 Enable"
+    },
+    "88": {
+      "long": "Oxygen Source",
+      "short": "Oxygen Source"
+    },
+    "87": {
+      "long": "Oxygen Delivery Mode",
+      "short": "Oxygen Delivery Mode"
+    },
+    "46": {
+      "long": "Insufflation Pressure",
+      "short": "Insufflation Pressure"
+    },
+    "47": {
+      "long": "Exsufflation Pressure",
+      "short": "Exsufflation Pressure"
+    },
+    "48": {
+      "long": "Insufflation Time",
+      "short": "Insufflation Time"
+    },
+    "49": {
+      "long": "Exsufflation Time",
+      "short": "Exsufflation Time"
+    },
+    "50": {
+      "long": "Pause Time",
+      "short": "Pause Time"
+    },
+    "51": {
+      "long": "Insufflation Rise Time",
+      "short": "Insuff. Rise Time"
+    },
+    "52": {
+      "long": "Cough Cycles",
+      "short": "Cough Cycles"
+    },
+    "53": {
+      "long": "Breath Sync",
+      "short": "Breath Sync"
+    },
+    "54": {
+      "long": "Cough+Suction",
+      "short": "Cough+Suction"
+    },
+    "55": {
+      "long": "Vacuum",
+      "short": "Vacuum"
+    },
+    "57": {
+      "long": "Nebulizer Duration",
+      "short": "Nebulizer Duration"
+    },
+    "12001": {
+      "long": "System Usage",
+      "short": "System Usage"
+    },
+    "12002": {
+      "long": " VPSA Usage",
+      "short": "VPSA Usage"
+    },
+    "12003": {
+      "long": "Pump Usage",
+      "short": "Pump Usage"
+    },
+    "12004": {
+      "long": "Hours Until PM Required",
+      "short": "Sys. PM Due In"
+    },
+    "9413": {
+      "long": "Internal Battery Capacity",
+      "short": "Int. Batt. Capacity"
+    },
+    "9414": {
+      "long": "Removable Battery 1 Capacity",
+      "short": "Rem. Batt. 1 Capacity"
+    },
+    "9415": {
+      "long": "Removable Battery 2 Capacity",
+      "short": "Rem. Batt. 2 Capacity"
+    },
+    "14506": {
+      "long": "O2 Concentrator Usage",
+      "short": "Concentrator Usage"
+    },
+    "9401": {
+      "long": "Airway Pressure",
+      "short": "Pressure"
+    },
+    "9402": {
+      "long": "Mean Airway Pressure",
+      "short": "MAP"
+    },
+    "9403": {
+      "long": "Peak Inspiratory Pressure",
+      "short": "PIP"
+    },
+    "9404": {
+      "long": "PEEP",
+      "short": "PEEP"
+    },
+    "9405": {
+      "long": "I:E Ratio",
+      "short": "I:E Ratio"
+    },
+    "9406": {
+      "long": "Vte/Est. Vte",
+      "short": "Vte"
+    },
+    "9407": {
+      "long": "Minute Volume",
+      "short": "Minute Volume"
+    },
+    "9408": {
+      "long": "Breath Rate",
+      "short": "Breath Rate"
+    },
+    "9409": {
+      "long": "Leak",
+      "short": "Leak"
+    },
+    "9410": {
+      "long": "% Patient Triggered Breaths",
+      "short": "Patient Triggered"
+    },
+    "9411": {
+      "long": "FIO2",
+      "short": "FiO2"
+    },
+    "9412": {
+      "long": "Calculated FiO2",
+      "short": "Calculated FiO2"
+    },
+    "12023": {
+      "long": "Cough Airway Pressure",
+      "short": "Pressure"
+    },
+    "12024": {
+      "long": "Peak Cough Flow",
+      "short": "Peak Cough Flow"
+    },
+    "12025": {
+      "long": "Cough Volume",
+      "short": "Cough Volume"
+    },
+    "12026": {
+      "long": "Cough Cycles",
+      "short": "Cough Cycles"
+    },
+    "12057": {
+      "long": "Battery Use",
+      "short": "Battery Use"
+    },
+    "12058": {
+      "long": "Maintenance Due",
+      "short": "Maintenance Due"
+    },
+    "12060": {
+      "long": "Internal Battery Low",
+      "short": "Internal Battery Low"
+    },
+    "12061": {
+      "long": "Internal Battery Critically Low",
+      "short": "Int. Batt. Critically Low"
+    },
+    "12062": {
+      "long": "System Fault",
+      "short": "System Fault"
+    },
+    "12072": {
+      "long": "Service Concentrator Soon",
+      "short": "Service Concentrator Soon"
+    },
+    "58": {
+      "long": "Apnea",
+      "short": "Apnea"
+    },
+    "59": {
+      "long": "High Breath Rate",
+      "short": "High Breath Rate"
+    },
+    "60": {
+      "long": "High Minute Volume",
+      "short": "High Minute Volume"
+    },
+    "61": {
+      "long": "High FiO2",
+      "short": "High FiO2"
+    },
+    "62": {
+      "long": "High Pressure",
+      "short": "High Pressure"
+    },
+    "63": {
+      "long": "High PEEP/EPAP",
+      "short": "High PEEP/EPAP"
+    },
+    "64": {
+      "long": "Low Breath Rate",
+      "short": "Low Breath Rate"
+    },
+    "65": {
+      "long": "Low Minute Volume",
+      "short": "Low Minute Volume"
+    },
+    "66": {
+      "long": "Low FiO2",
+      "short": "Low FiO2"
+    },
+    "67": {
+      "long": "Low Insp. Pressure",
+      "short": "Low Insp. Pressure"
+    },
+    "68": {
+      "long": "Patient Circuit Disconnect",
+      "short": "Patient Circuit Discon."
+    },
+    "98": {
+      "long": "High Flow Patient Circuit Disconnect",
+      "short": "High Flow Patient Circuit Discon."
+    },
+    "12063": {
+      "long": "Very Low FiO2",
+      "short": "Very Low FiO2"
+    },
+    "12064": {
+      "long": "Check Patient Circuit",
+      "short": "Check Patient Circuit"
+    },
+    "70": {
+      "long": "Low PEEP/EPAP",
+      "short": "Low PEEP/EPAP"
+    },
+    "99": {
+      "long": "Check O2 Source",
+      "short": "Check O2 Source"
+    },
+    "12065": {
+      "long": "O2 Concentration",
+      "short": "O2 Concentration"
+    },
+    "14507": {
+      "long": "Low Circuit Leak",
+      "short": "Low Circuit Leak"
+      },
+    "2307": {
+      "long": "Oxygen Preset 1 Enable",
+      "short": "O2 Preset 1"
+    },
+    "2308": {
+      "long": "Oxygen Preset 2 Enable",
+      "short": "O2 Preset 2"
+    },
+    "2309": {
+      "long": "Oxygen Preset 3 Enable",
+      "short": "O2 Preset 3"
+    },
+    "suction-pressure": {
+      "long": "Vacuum",
+      "short": "Vacuum"
+    }
+  }
+}

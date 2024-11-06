@@ -1,0 +1,17 @@
+#!/bin/bash
+
+######################################
+##                                  ##
+##         Report System            ##
+##      Configuration Update        ##
+##                                  ##
+######################################
+
+# Read master configuration table credentials from .env.config
+# Download configuration from database
+# Recreate local .env file with new values
+# Store update time from table to detect when rebuilds are needed
+
+
+# Run configuration updater script
+/usr/bin/python3 ~/vocsn-web/update_config.py ~/vocsn-web/.env.conf

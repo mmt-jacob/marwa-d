@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "room": "401",
+    "status": "Not In Use",
+    "date": "12/01/17",
+    "time": "18:02",
+    "risk": ""
+  },
+  {
+    "id": 2,
+    "room": "402",
+    "status": "Not In Use",
+    "date": "12/04/17",
+    "time": "16:52",
+    "risk": ""
+  },
+  {
+    "id": 3,
+    "room": "403",
+    "status": "Ready",
+    "date": "12/10/17",
+    "time": "11:35",
+    "risk": "High"
+  },
+  {
+    "id": 4,
+    "room": "404",
+    "status": "Not In Use",
+    "date": "12/09/17",
+    "time": "08:45",
+    "risk": ""
+  },
+  {
+    "id": 5,
+    "room": "405",
+    "status": "Monitoring",
+    "date": "12/10/17",
+    "time": "14:58",
+    "risk": ""
+  },
+  {
+    "id": 6,
+    "room": "406",
+    "status": "Not In Use",
+    "date": "12/08/17",
+    "time": "08:25",
+    "risk": ""
+  },
+  {
+    "id": 7,
+    "room": "407",
+    "status": "Monitoring",
+    "date": "12/10/17",
+    "time": "12:05",
+    "risk": ""
+  },
+  {
+    "id": 8,
+    "room": "408",
+    "status": "Not In Use",
+    "date": "12/10/17",
+    "time": "08:50",
+    "risk": ""
+  },
+  {
+    "id": 9,
+    "room": "409",
+    "status": "Not In Use",
+    "date": "12/09/17",
+    "time": "09:25",
+    "risk": ""
+  },
+  {
+    "id": 10,
+    "room": "410",
+    "status": "Not In Use",
+    "date": "12/10/17",
+    "time": "09:10",
+    "risk": ""
+  },
+  {
+    "id": 11,
+    "room": "411",
+    "status": "Not In Use",
+    "date": "12/08/17",
+    "time": "08:46",
+    "risk": ""
+  },
+  {
+    "id": 12,
+    "room": "412",
+    "status": "Monitoring",
+    "date": "12/10/17",
+    "time": "09:30",
+    "risk": "High"
+  },
+  {
+    "id": 13,
+    "room": "413",
+    "status": "Monitoring",
+    "date": "12/10/17",
+    "time": "10:21",
+    "risk": ""
+  },
+  {
+    "id": 14,
+    "room": "414",
+    "status": "Not In Use",
+    "date": "12/06/17",
+    "time": "08:22",
+    "risk": ""
+  },
+  {
+    "id": 15,
+    "room": "415",
+    "status": "Monitoring",
+    "date": "12/10/17",
+    "time": "11:17",
+    "risk": ""
+  }
+]

@@ -1,0 +1,428 @@
+{
+  "vocsn_version": "4.06.04",
+  "schema_version": 1.0,
+  "system": {
+    "store_phi": false
+  },
+  "ranges": [
+    {
+      "name": "1-Hour",
+      "report_duration": 1,
+      "trend_name": null,
+      "trend_period": null,
+      "trend_units": null,
+      "graph_tick_inc": 10,
+      "graph_sub_ticks": 5,
+      "graph_tick_units": "minutes",
+      "graph_samples_per_tick": 2
+    },
+    {
+      "name": "3-Hour",
+      "report_duration": 3,
+      "trend_name": null,
+      "trend_period": null,
+      "trend_units": null,
+      "graph_tick_inc": 30,
+      "graph_sub_ticks": 6,
+      "graph_tick_units": "minutes",
+      "graph_samples_per_tick": 6
+    },
+    {
+      "name": "6-Hour",
+      "report_duration": 6,
+      "trend_name": null,
+      "trend_period": null,
+      "trend_units": null,
+      "graph_tick_inc": 1,
+      "graph_sub_ticks": 4,
+      "graph_tick_units": "hours",
+      "graph_samples_per_tick": 12
+    },
+    {
+      "name": "12-Hours",
+      "report_duration": 12,
+      "trend_name": null,
+      "trend_period": null,
+      "trend_units": null,
+      "graph_tick_inc": 2,
+      "graph_sub_ticks": 6,
+      "graph_tick_units": "hours",
+      "graph_samples_per_tick": 18
+    },
+    {
+      "name": "1-Day",
+      "report_duration": 24,
+      "trend_name": null,
+      "trend_period": null,
+      "trend_units": null,
+      "graph_tick_inc": 3,
+      "graph_sub_ticks": 3,
+      "graph_tick_units": "hours",
+      "graph_samples_per_tick": 18
+    },
+    {
+      "name": "3-Day",
+      "report_duration": 72,
+      "trend_name": "24 Hours",
+      "trend_period": 24,
+      "trend_units": "hours",
+      "graph_tick_inc": 12,
+      "graph_sub_ticks": 4,
+      "graph_tick_units": "hours",
+      "graph_samples_per_tick": 18
+    },
+    {
+      "name": "1-Week",
+      "report_duration": 168,
+      "trend_name": "1 Day",
+      "trend_period": 24,
+      "trend_units": "hours",
+      "graph_tick_inc": 1,
+      "graph_sub_ticks": 4,
+      "graph_tick_units": "days",
+      "graph_samples_per_tick": 18
+    },
+    {
+      "name": "1-Month",
+      "report_duration": 720,
+      "trend_name": "1 Week",
+      "trend_period": 7,
+      "trend_units": "days",
+      "graph_tick_inc": 5,
+      "graph_sub_ticks": 5,
+      "graph_tick_units": "days",
+      "graph_samples_per_tick": 24
+    },
+    {
+      "name": "2-Month",
+      "report_duration": 1440,
+      "duration_units": "days",
+      "trend_name": "2 Weeks",
+      "trend_period": 14,
+      "trend_units": "days",
+      "graph_tick_inc": 7,
+      "graph_sub_ticks": 7,
+      "graph_tick_units": "days",
+      "graph_samples_per_tick": 24
+    },
+    {
+      "name": "3-Month",
+      "report_duration": 2160,
+      "duration_units": "days",
+      "trend_name": "3 Weeks",
+      "trend_period": 21,
+      "trend_units": "days",
+      "graph_tick_inc": 7,
+      "graph_sub_ticks": 7,
+      "graph_tick_units": "days",
+      "graph_samples_per_tick": 24
+    },
+    {
+      "name": "6-Month",
+      "report_duration": 4320,
+      "duration_units": "days",
+      "trend_name": "6 Weeks",
+      "trend_period": 42,
+      "trend_units": "days",
+      "graph_tick_inc": 14,
+      "graph_sub_ticks": 7,
+      "graph_tick_units": "days",
+      "graph_samples_per_tick": 48
+    },
+    {
+      "name": "All",
+      "report_duration": 99999,
+      "trend_name": null,
+      "trend_period": null,
+      "trend_units": null,
+      "graph_tick_inc": 1,
+      "graph_sub_ticks": 1,
+      "graph_tick_units": "days",
+      "graph_samples_per_tick": 1
+    }
+  ],
+  "tables": {
+    "table_row_max": 1590,
+    "alarm_duration_splits": [
+      {
+        "low": 0,
+        "high": 20
+      },
+      {
+        "low": 20,
+        "high": 40
+      },
+      {
+        "low": 40,
+        "high": 60
+      },
+      {
+        "low": 60,
+        "high": null
+      }
+    ]
+  },
+  "graphics": {
+    "plotly_scale": 3
+  },
+  "display": {
+    "trend_table": {
+      "ventilator": {
+        "9406": {
+          "source": "monitor",
+          "label": "Vte/Est. Vte"
+        },
+        "9408": {
+          "source": "monitor",
+          "label": "Breath Rate"
+        },
+        "9407": {
+          "source": "monitor",
+          "label": "Minute Volume"
+        },
+        "9402": {
+          "source": "monitor",
+          "label": "MAP"
+        },
+        "9403": {
+          "source": "monitor",
+          "label": "PIP"
+        },
+        "9404": {
+          "source": "monitor",
+          "label": "PEEP/EPAP"
+        },
+        "9410": {
+          "source": "monitor",
+          "label": "Patient\nTriggered"
+        },
+        "9409": {
+          "source": "monitor",
+          "label": "Leak"
+        }
+      },
+      "oxygen": {
+        "45": {
+          "source": "setting",
+          "label": "Set Pulse Dose"
+        },
+        "41": {
+          "source": "setting",
+          "label": "Set FiO2"
+        },
+        "9412": {
+          "source": "monitor",
+          "label": "Calc. FiO2"
+        },
+        "9411": {
+          "source": "monitor",
+          "label": "Mon. FiO2"
+        }
+      },
+      "cough": {
+      },
+      "suction": {
+        "suction-pressure": {
+          "source": "stop_value",
+          "label": "Vacuum"
+        }
+      },
+      "nebulizer": {
+        "neb-duration": {
+          "source": "stop_value",
+          "label": "Neb. Duration"
+        }
+      }
+    },
+    "settings_chart": {
+      "settings_groups": {
+        "ventilation": [
+          "24",
+          "73",
+          "14",
+          "13",
+          "25",
+          "26",
+          "28",
+          "101",
+          "100",
+          "29",
+          "35",
+          "30",
+          "33",
+          "32",
+          "34",
+          "36",
+          "37",
+          "38",
+          "39",
+          "40",
+          "42",
+          "96",
+          "95",
+          "58",
+          "58",
+          "64",
+          "59",
+          "65",
+          "60",
+          "67",
+          "62",
+          "63",
+          "70",
+          "68",
+          "98",
+          "43"
+        ],
+        "oxygen": [
+          "88",
+          "87",
+          "45",
+          "41",
+          "99",
+          "66",
+          "61"
+        ],
+        "cough": [
+          "46",
+          "47",
+          "48",
+          "49",
+          "50",
+          "51",
+          "52",
+          "53",
+          "54"
+        ],
+        "suction": [
+          "suction-pressure"
+        ],
+        "nebulizer": [
+          "57"
+        ],
+        "system": [
+          "2",
+          "94",
+          "23",
+          "3",
+          "4",
+          "5",
+          "6",
+          "72"
+        ]
+      }
+    },
+    "monitor_graphs": {
+      "9406": {
+        "source": "monitor",
+        "label": "Vte/Est. Vte",
+        "min_range": 25
+      },
+      "9408": {
+        "source": "monitor",
+        "label": "Breath Rate",
+        "min_range": 12
+      },
+      "9407": {
+        "source": "monitor",
+        "label": "Minute Volume",
+        "min_range": 10
+      },
+      "9402": {
+        "source": "monitor",
+        "label": "MAP",
+        "min_range": 12
+      },
+      "9403": {
+        "source": "monitor",
+        "label": "PIP",
+        "min_range": 12
+      },
+      "9404": {
+        "source": "monitor",
+        "label": "PEEP/EPAP",
+        "min_range": 12
+      },
+      "9410": {
+        "source": "monitor",
+        "label": "Patient Triggered",
+        "range": [0, 100]
+      },
+      "9409": {
+        "source": "monitor",
+        "label": "Leak",
+        "min_range": 12
+      },
+      "9405": {
+        "source": "monitor",
+        "label": "I:E Ratio",
+        "min_range": 4
+      },
+      "9411": {
+        "source": "monitor",
+        "label": "FiO2",
+        "min_range": 12,
+        "min_bound": 20,
+        "max_bound": 100
+      },
+      "9412": {
+        "source": "monitor",
+        "label": "Calc. FiO2",
+        "min_range": 12,
+        "min_bound": 20,
+        "max_bound": 100
+      },
+      "blank_1": {},
+      "12024": {
+        "source": "stop_value",
+        "therapy": "cough",
+        "label": "Peak Cough Flow",
+        "min_range": 12
+      },
+      "12025": {
+        "source": "stop_value",
+        "therapy": "cough",
+        "label": "Cough Volume",
+        "min_range": 12
+      },
+      "12026": {
+        "source": "stop_value",
+        "therapy": "cough",
+        "label": "Cough Cycles",
+        "range": [0, 10]
+      },
+      "usage": {}
+    }
+  },
+  "errors": {
+    "level": {
+      "critical": {
+        "thresholds": {
+          "event": 1,
+          "config": 1,
+          "monitor": 10,
+          "general": 20,
+          "unknown": 1
+        }
+      },
+      "advisory": {
+        "thresholds": {
+          "event": 1,
+          "config": 1,
+          "monitor": 5,
+          "general": 10,
+          "unknown": 1
+        }
+      },
+      "minor": {
+        "thresholds": {
+          "event": 1,
+          "config": 1,
+          "monitor": 1,
+          "general": 5,
+          "unknown": 1
+        }
+      }
+    }
+  }
+}

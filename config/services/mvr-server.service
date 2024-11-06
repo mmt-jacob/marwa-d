@@ -1,0 +1,20 @@
+[Unit]
+Description=Multi-View GraphQL Server
+Wants=mvr-update.service
+Requires=mvr-update.service
+After=network.target
+After=mvr-update.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=3
+User=root
+RootDirectory=/
+WorkingDirectory=/home/ventec/vocsn-web/server
+ExecStart=/home/ventec/vocsn-web/server/server-startup.sh
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

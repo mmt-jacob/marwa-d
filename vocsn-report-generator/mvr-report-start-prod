@@ -1,0 +1,39 @@
+#!/bin/bash
+
+######################################
+##                                  ##
+##  VOCSN Multi-View Report System  ##
+##         Report Generator         ##
+##                                  ##
+######################################
+
+# Start python daemon to manage worker scripts for:
+#   - Generate reports
+#   - Assemble report batches in zip files
+#   - Perform regular cleanup
+# Uses production credentials from ~/vocsn-web/.env
+# Starts and enables the mvr-reports system service to
+#   restart the daemon on crash and reboot
+
+# Require root privileges
+if [[ $(/usr/bin/id -u) -ne 0 ]]; then
+    echo "Root permissions required."
+    exit
+fi
+
+# Update configuration
+sudo python3 /home/ventec/vocsn-web/update_config.py "/home/ventec/vocsn-web/.env.conf"
+
+# Stop existing service if its running
+if systemctl is-active --quiet mvr-reports
+then
+    echo "Stopping mvr-reports service"
+    sudo systemctl stop mvr-reports
+fi
+
+# Start mvr-reports service
+echo "Starting Multi-View Report Generator - Production"
+echo "Enabling mvr-reports service"
+sudo systemctl enable mvr-reports
+echo "Starting mvr-reports service"
+sudo systemctl start mvr-reports

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+######################################
+##                                  ##
+##  VOCSN Multi-View Report System  ##
+##           React Client           ##
+##                                  ##
+######################################
+
+# Start react client hosted natively in node.js
+# Uses development credentials from ~/vocsn-web/.env
+# Monitors source files and automatically restarts on changes
+
+# Start serving React client in node
+echo "Starting Multi-View React Client - Development"
+cd ~/vocsn-web/client
+yarn
+yarn start

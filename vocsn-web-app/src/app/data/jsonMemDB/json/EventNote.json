@@ -1,0 +1,29 @@
+[
+  {
+    "id": 0,
+    "timestamp": 0,
+    "eventId": 0,
+    "eventTimestamp": 1519901580,
+    "eventLocation": "406",
+    "eventType": "Fall",
+    "eventNote": "Patient was found on the floor..."
+  },
+  {
+    "id": 0,
+    "timestamp": 0,
+    "eventId": 0,
+    "eventTimestamp": 1520404380,
+    "eventLocation": "409",
+    "eventType": "Other",
+    "eventNote": "Patient was found standing by..."
+  },
+  {
+    "id": 0,
+    "timestamp": 0,
+    "eventId": 0,
+    "eventTimestamp": 1520616300,
+    "eventLocation": "410",
+    "eventType": "Fall",
+    "eventNote": "Patient was found on floor by..."
+  }
+]

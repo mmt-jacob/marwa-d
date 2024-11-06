@@ -1,0 +1,41 @@
+#!/bin/bash
+
+######################################
+##                                  ##
+##  VOCSN Multi-View Report System  ##
+##           React Client           ##
+##                                  ##
+######################################
+
+# Start react client hosted by NGINX
+# Uses production credentials from ~/vocsn-web/.env
+# Will automatically start/restart on system reboot
+
+# Require root privileges
+if [[ $(/usr/bin/id -u) -ne 0 ]]; then
+    echo "Root permissions required."
+    exit
+fi
+
+# Preserve path
+path="$(dirname "${BASH_SOURCE[0]}")"
+cd "$path"
+
+# Update configuration
+sudo python3 ../update_config.py ../.env.conf
+
+# Stop existing service if its running
+if systemctl is-active --quiet mvr-client
+then
+    echo "Stopping mvr-client service"
+    sudo systemctl stop mvr-client
+fi
+
+# Rebuild web app
+./client-startup.sh force
+
+# Start mvr-client service
+echo "Enabling mvr-client service"
+sudo systemctl enable mvr-client
+echo "Starting mvr-client service"
+sudo systemctl start mvr-client

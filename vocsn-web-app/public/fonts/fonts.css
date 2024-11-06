@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'avenir-light';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./Avenir-Light-07.ttf');
+}
+@font-face {
+  font-family: 'avenir-roman';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./Avenir-Roman-12.ttf');
+}
+@font-face {
+  font-family: 'avenir-heavy';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./Avenir-Heavy-05.ttf');
+}
+@font-face {
+  font-family: 'avenir-black';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./Avenir-Black-03.ttf');
+}

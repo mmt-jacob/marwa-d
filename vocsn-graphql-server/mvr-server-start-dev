@@ -1,0 +1,18 @@
+#!/bin/bash
+
+######################################
+##                                  ##
+##  VOCSN Multi-View Report System  ##
+##          GraphQL Server          ##
+##                                  ##
+######################################
+
+# Start GraphQL server natively in node.js
+# Uses development credentials from ~/vocsn-web/.env
+# Will automatically start/restart on system reboot
+
+# Build node dependencies and compile code
+echo "Starting Multi-View GraphQL Server - Development"
+cd ~/vocsn-web/server
+yarn
+yarn start-dev

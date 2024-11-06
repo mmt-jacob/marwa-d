@@ -1,0 +1,19 @@
+#!/bin/bash
+
+######################################
+##                                  ##
+##  VOCSN Multi-View Report System  ##
+##         Report Generator         ##
+##                                  ##
+######################################
+
+# Start python daemon to manage worker scripts for:
+#   - Generate reports
+#   - Assemble report batches in zip files
+#   - Perform regular cleanup
+# Uses development credentials from ~/vocsn-web/.env
+
+# Start serving React client in node
+echo "Starting Multi-View Report Generator - Development"
+cd ~/vocsn-web/reports
+python3 report_generator_d.py

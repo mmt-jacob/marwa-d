@@ -1,0 +1,50 @@
+{
+  "name": "vocsn-client",
+  "sys_version": "1.01.01",
+  "mod_version": "1.01.01",
+  "private": true,
+  "description": "VOCSN Reports Web App",
+  "author": "John Dorian, Michael J. Offenbecher",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.8.1",
+    "@material-ui/icons": "^4.5.1",
+    "@material-ui/pickers": "^3.2.8",
+    "@date-io/core": "^1.3.6",
+    "@date-io/date-fns": "^1.3.13",
+    "babel-polyfill": "^6.26.0",
+    "date-fns": "^2.8.1",
+    "classnames": "^2.2.6",
+    "apollo-client": "^2.6.4",
+    "apollo-link-error": "^1.1.12",
+    "apollo-link-http": "^1.5.16",
+    "apollo-upload-client": "^11.0.0",
+    "apollo-cache-inmemory": "^1.6.3",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.8.0",
+    "node-localstorage": "^1.3.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.1",
+    "react-apollo": "^2.1.3",
+    "react-device-detect": "^1.11.14",
+    "react-dom": "^16.3.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^1.1.4",
+    "react-app-rewired": "^2.1.5",
+    "typeface-roboto": "^0.0.54",
+    "react-dropzone": "^10.2.1"
+  },
+  "devDependencies": {
+    "eslint": "4.9.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

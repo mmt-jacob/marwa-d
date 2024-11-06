@@ -1,0 +1,74 @@
+[
+  {
+    "id": 0,
+    "timestamp": 0,
+    "firstName": "Anoop",
+    "lastName": "Elgonda",
+    "phone": "(760) 586-3505",
+    "imageFilename": "",
+    "username": "aelgonda@sai.org",
+    "password": "Sai007",
+    "role": 3,
+    "facilityIds": ["CAVN005"]
+  },
+  {
+    "id": 1,
+    "timestamp": 0,
+    "firstName": "John",
+    "lastName": "Osborn",
+    "phone": "(760) 521-5977",
+    "imageFilename": "john_osborn.jpg",
+    "username": "jwosborn@sai.org",
+    "password": "6802",
+    "role": 3,
+    "facilityIds": ["CAVN005"]
+  },
+  {
+    "id": 2,
+    "timestamp": 0,
+    "firstName": "Jerry",
+    "lastName": "Howard",
+    "phone": "(760) 580-9051",
+    "imageFilename": "",
+    "username": "jhoward@moondust.com",
+    "password": "password",
+    "role": 3,
+    "facilityIds": ["CAVN005"]
+  },
+  {
+    "id": 3,
+    "timestamp": 0,
+    "firstName": "Mike",
+    "lastName": "Offenbecher",
+    "phone": "(760) 685-7670",
+    "imageFilename": "mike_offenbecher.jpg",
+    "username": "mike@techduke.io",
+    "password": "CharlieD0g",
+    "role": 3,
+    "facilityIds": ["CAVN005", "KSVN001", "KSVN002"]
+  },
+  {
+    "id": 4,
+    "timestamp": 0,
+    "firstName": "Wonder",
+    "lastName": "Woman",
+    "phone": "(800) 123-4567",
+    "imageFilename": "",
+    "username": "ww@superhero.com",
+    "password": "ww-rocks!",
+    "role": 2,
+    "facilityIds": ["KSVN001"]
+  },
+  {
+    "id": 5,
+    "timestamp": 0,
+    "firstName": "Fred",
+    "lastName": "Flintstone",
+    "phone": "(001) 000-5555",
+    "imageFilename": "",
+    "username": "fred@bedrock.com",
+    "password": "bedrock",
+    "role": 1,
+    "facilityIds": ["KSVN002"]
+  }
+]

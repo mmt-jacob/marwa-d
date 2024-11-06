@@ -1,0 +1,18 @@
+[Unit]
+Description=Multi-View Report Generator
+Wants=mvr-update.service
+After=network.target
+After=mvr-update.service
+Requires=mvr-update.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=3
+User=ventec
+WorkingDirectory=/home/ventec/vocsn-web/reports
+ExecStart=/usr/bin/python3 /home/ventec/vocsn-web/reports/report_generator_d.py -p
+
+[Install]
+WantedBy=multi-user.target

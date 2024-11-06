@@ -1,0 +1,41 @@
+[
+  {
+    "facilityId": "CAVN005",
+    "name": "Kaiser Permanente Zion Medical Center",
+    "shortName": "KP Zion Med Center",
+    "address1": "4647 Zion Avenue",
+    "address2": "",
+    "city": "San Diego",
+    "state": "California",
+    "zip": "92120",
+    "phone": "619-528-5000",
+    "contactName": "Doctor Zhivago",
+    "createdBy": "mike@techduke.io"
+  },
+  {
+    "facilityId": "KSVN001",
+    "name": "University of Kansas Health System, St. Francis Campus",
+    "shortName": "KU HS St. Francis",
+    "address1": "1700 SW 7th Street",
+    "address2": "",
+    "city": "Topeka",
+    "state": "Kansas",
+    "zip": "66606-1690",
+    "phone": "785-295-8000",
+    "contactName": "Dr. Spock",
+    "createdBy": "mike@techduke.io"
+  },
+  {
+    "facilityId": "KSVN002",
+    "name": "Stormont Vail Hospital",
+    "shortName": "Stormont Vail",
+    "address1": "1500 SW 10th Avenue",
+    "address2": "",
+    "city": "Topeka",
+    "state": "Kansas",
+    "zip": "66604",
+    "phone": "785-354-6000",
+    "contactName": "Dr. Who",
+    "createdBy": "mike@techduke.io"
+  }
+]

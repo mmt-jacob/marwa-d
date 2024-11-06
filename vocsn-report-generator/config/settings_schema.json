@@ -1,0 +1,304 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "VOCSN Reporting System Settings Schema",
+    "description": "These properties direct the behavior of the report generation procedures and control report formatting.",
+    "type": "object",
+
+    "vocsn_version": {
+        "description": "VOCSN software version that corresponds with these settings. Must match number used in file name.",
+        "type": "float",
+        "minimum": 0.0
+    },
+
+    "schema_version": {
+        "description": "Settings version unique to the VOCSN version identified above. Helps to match between system components.",
+        "type": "float",
+        "minimum": 0.0
+    },
+
+    "system": {
+        "description": "System-wide settings.",
+        "type": "object",
+
+        "store_phi": {
+            "description": "Enables PHI storage across the system. PHI will be encrypted in the database and file system. Fillable report fields are replaced with string literals.",
+            "type": "bool"
+        }
+    },
+
+    "definitions": {
+        "error_thresholds": {
+            "description": "Error thresholds for individual records of various types.",
+            "type": "object",
+            "event": {
+                "type": "integer"
+            },
+            "config": {
+                "type": "integer"
+            },
+            "monitor": {
+                "type": "integer"
+            },
+            "general": {
+                "type": "integer"
+            },
+            "required": ["event", "config", "monitor", "general"]
+        }
+    },
+
+    "ranges": {
+        "description": "Report range options with parameters for logic and formatting that depend on report range.",
+        "type": "object",
+
+        "name": {
+            "description": "Report range name.",
+            "type": "string"
+        },
+        "report_duration": {
+            "description": "The number of time units  of data shown in the report. Units defined in duration_units.",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 90
+        },
+        "duration_units.": {
+            "description": "Time units that apply to report_duration.",
+            "enum": ["days", "hours"],
+            "minimum": 0,
+            "maximum": 90
+        },
+        "trend_period": {
+            "description": "The trend measurement period. Period is measured from the end of the report range. Example: 7 days measures the last 7 days of the report range and compares it to the average of the entire report range.",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 90
+        },
+        "trend_units": {
+            "description": "Units used for trend_period and trend_sample. Can be 'days' or 'hours'.",
+            "enum": ["days", "hours"]
+        },
+        "graph_ticks": {
+            "description": "The number of ticks that appear on graphs of monitored data.",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 16
+        },
+        "graph_tick_inc": {
+            "description": "The incremented value between ticks on graphs of monitored data. Ensure the product of graph_ticks and graph_tick_inc equal the report range duration.",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 24
+        },
+        "graph_sub_ticks": {
+            "description": "The number of sub-ticks per tick on graphs.",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 24
+        },
+        "graph_tick_units": {
+            "description": "Units used for graph_ticks and graph_tick_inc.",
+            "enum": ["days", "hours"]
+        },
+        "graph_samples_per_tick": {
+            "description": "How many samples are displayed between each tick on graphs of monitored data.",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 256
+        }
+    },
+
+    "tables": {
+        "description": "Report table formatting definitions",
+        "type": "object",
+
+        "table_row_max": {
+            "description": "Maximum number of rows allowed per table.",
+            "type": "int"
+        },
+
+        "alarm_duration_splits": {
+            "description": "Alarm duration bucket definitions. Values in seconds.",
+            "type": "object",
+
+            "low": {
+                "description": "Low end of range.",
+                "type": "int"
+            },
+            "high": {
+                "description": "High end of range.",
+                "type": "int"
+            }
+        }
+    },
+
+    "graphics": {
+        "description": "Graphics settings.",
+        "type": "object",
+
+        "plotly_scale": {
+            "description": "Resolution scale for plotly-generated graphics. This primarily includes bar graphs. Scale 1 = 72 dpi, scale 2 = 144 dpi, etc.",
+            "type": "int"
+        }
+    },
+
+    "display": {
+        "description": "Display settings. Controls which data are displayed in different sections of the report.",
+        "type": "object",
+
+        "trend_table": {
+            "description": "Specifies which monitor data channels are displayed as blocks in the trend table. Note that there are permanent hard-coded blocks that are not controlled here.",
+            "type": "object",
+
+            "ventilator": {
+                "description": "Ventilator monitor channels to show as trend table block. Lists monitor channel IDs.",
+                "type": "object",
+
+                "source": {
+                    "description": "Data source",
+                    "enum": ["monitor", "setting", "stop_value"]
+                },
+
+                "label": {
+                    "description": "Report display label",
+                    "type": "string"
+                }
+            },
+
+            "oxygen": {
+                "description": "Oxygen monitor channels to show as trend table block. Lists monitor channel IDs.",
+                "type": "object",
+
+                "source": {
+                    "description": "Data source",
+                    "enum": ["monitor", "setting", "stop_value"]
+                },
+                "label": {
+                    "description": "Report display label",
+                    "type": "string"
+                }
+            },
+
+            "cough": {
+                "description": "Cough monitor channels to show as trend table block. Lists monitor channel IDs.",
+                "type": "object",
+
+                "source": {
+                    "description": "Data source",
+                    "enum": ["monitor", "setting", "stop_value"]
+                },
+                "label": {
+                    "description": "Report display label",
+                    "type": "string"
+                }
+            },
+
+            "suction": {
+                "description": "Suction monitor channels to show as trend table block. Lists monitor channel IDs.",
+                "type": "object",
+
+                "source": {
+                    "description": "Data source",
+                    "enum": ["monitor", "setting", "stop_value"]
+                },
+                "label": {
+                    "description": "Report display label",
+                    "type": "string"
+                }
+            },
+
+            "nebulizer": {
+                "description": "Nebulizer monitor channels to show as trend table block. Lists monitor channel IDs.",
+                "type": "object",
+
+                "source": {
+                    "description": "Data source",
+                    "enum": ["monitor", "setting", "stop_value"]
+                },
+                "label": {
+                    "description": "Report display label",
+                    "type": "string"
+                }
+            },
+
+            "required": [
+                "ventilator",
+                "oxygen",
+                "cough",
+                "suction",
+                "nebulizer"
+            ]
+        },
+
+        "settings_chart": {
+            "description": "Ordered list of parameter IDs for each line shown in the settings chart, grouped by therapy or system.",
+            "type": "object",
+
+            "settings_groups": {
+                "description": "Setting groups based on therapy or system.",
+                "type": "object",
+
+                "ventilation": {
+                    "description": "Ventilation settings group.",
+                    "type": "object"
+                },
+
+                "oxygen": {
+                    "description": "Oxygen settings group.",
+                    "type": "object"
+                },
+
+                "cough": {
+                    "description": "Cough settings group.",
+                    "type": "object"
+                },
+
+                "suction": {
+                    "description": "Suction settings group.",
+                    "type": "object"
+                },
+
+                "nebulizer": {
+                    "description": "Nebulizer settings group.",
+                    "type": "object"
+                },
+
+                "system": {
+                    "description": "System settings group.",
+                    "type": "object"
+                }
+            }
+
+        }
+
+    },
+
+    "errors" : {
+        "description": "Error threshold settings to define when different error levels are satisfied.",
+        "type": "object",
+
+        "level": {
+            "description": "Error severity levels.",
+            "type": "object",
+
+            "critical": { "type": "error_thresholds" },
+            "advisory": { "type": "error_thresholds" },
+            "minor": { "type": "error_thresholds" }
+        },
+        "required": [
+          "critical",
+          "advisory",
+          "minor"
+        ]
+    },
+
+    "required": [
+        "vocsn_version",
+        "schema_version",
+        "system",
+        "definitions",
+        "ranges",
+        "tables",
+        "graphics",
+        "display",
+        "errors"
+    ]
+}

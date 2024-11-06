@@ -1,0 +1,143 @@
+<?xml version="1.1"?>
+
+<!-- VOCSN Definitions Schema v0.1 -->
+<!-- XSD Version 1.0 -->
+
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- ==================
+    Custom Type Definitions
+    =================== -->
+
+    <!-- Associate data stream with a therapy or other function -->
+    <xs:simpleType name="ComponentType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ventilator"/>
+            <xs:enumeration value="oxygen"/>
+            <xs:enumeration value="cough"/>
+            <xs:enumeration value="suction"/>
+            <xs:enumeration value="nebulizer"/>
+            <xs:enumeration value="contextual"/>    <!-- Indicates that special hard-coded procedures exists to
+                                                         determine the corresponding component. -->
+            <xs:enumeration value="system"/>
+            <xs:enumeration value="maintenance"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Detail strings display rules -->
+    <xs:simpleType name="DisplayType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="direct"/>        <!-- Show as-is -->
+            <xs:enumeration value="lookup"/>        <!-- Lookup string in in string_dict.py -->
+            <xs:enumeration value="preset"/>        <!-- Print in preset format (e.g. "Preset 1: Daytime") -->
+            <xs:enumeration value="scaledUnits"/>   <!-- Apply divisor and units
+                                                         The "divisor" and "units" attributes must be specified here
+                                                         to identify the names of the sibling attributes to be used
+                                                         for these purposes. -->
+            <xs:enumeration value="contextual"/>    <!-- Indicates that special hard-coded procedures exist to
+                                                         determine appropriate formatting. -->
+            <xs:enumeration value="n/a"/>           <!-- Not shown -->
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <!-- ===
+    Metadata
+    ==== -->
+
+    <!-- Control definitions -->
+    <xs:element name="ControlList">
+    </xs:element>
+
+
+    <!-- ================
+    Definition Lists
+    Note: Undefined types
+    will be ignored
+    ================= -->
+
+
+    <xs:element name="VocsnDefinitions">
+        <xs:complexType>
+            <xs:sequence>
+
+                <!-- Control definitions -->
+                <xs:element name="ControlList">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Control" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute type="xs:string" name="title" use="required"/>
+                                            <xs:attribute type="xs:int" name="id" use="required"/>
+                                            <xs:attribute type="ComponentType" name="component" use="required"/>
+                                            <xs:attribute type="xs:boolean" name="user_visible" use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Monitored data stream definitions -->
+                <xs:element name="MonitorList">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Monitor" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute type="xs:string" name="title" use="required"/>
+                                            <xs:attribute type="xs:int" name="id" use="required"/>
+                                            <xs:attribute type="ComponentType" name="component" use="required"/>
+                                            <xs:attribute type="xs:boolean" name="user_visible" use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Event definitions -->
+                <xs:element name="EventList">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Event" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Detail" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute type="xs:string" name="title" use="required"/>
+                                                        <xs:attribute type="xs:string" name="key" use="required"/>
+                                                        <xs:attribute type="DisplayType" name="display" use="required"/>
+                                                        <xs:attribute type="xs:string" name="divisor"/>
+                                                        <xs:attribute type="xs:string" name="units"/>
+                                                        <xs:attribute type="xs:boolean" name="user_visible" use="required"/>
+                                                        <!--
+                                                        <xs:assert test="(@display != 'ScaledUnits') or ((@display = 'ScaledUnits') and (exists(@divisor) and exists(@units))) "/>
+                                                        -->
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:string" name="title" use="required"/>
+                                    <xs:attribute type="xs:int" name="id" use="required"/>
+                                    <xs:attribute type="ComponentType" name="component" use="required"/>
+                                    <xs:attribute type="xs:boolean" name="user_visible" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+            <xs:attribute type="xs:float" name="version" use="required"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

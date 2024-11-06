@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<VocsnDefinitions version="0.1">
+    <ControlList>
+        <Control title="Mode" id="3173" component="ventilator" user_visible="true"/>
+        <Control title="Patient Type" id="3153" component="ventilator" user_visible="true"/>
+        <Control title="Humidification" id="3154" component="ventilator" user_visible="true"/>
+        <Control title="Circuit Type" id="3174" component="ventilator" user_visible="true"/>
+        <Control title="Breath Rate" id="3155" component="ventilator" user_visible="true"/>
+        <Control title="Inspiratory Time" id="3156" component="ventilator" user_visible="true"/>
+        <Control title="Volume Targeted" id="3157" component="ventilator" user_visible="true"/>
+        <Control title="Tidal Volume" id="3158" component="ventilator" user_visible="true"/>
+        <Control title="Flow Trigger" id="3165" component="ventilator" user_visible="true"/>
+        <Control title="Pressure Control" id="3161" component="ventilator" user_visible="true"/>
+        <Control title="Pressure Support" id="3162" component="ventilator" user_visible="true"/>
+        <Control title="IPAP" id="3164" component="ventilator" user_visible="true"/>
+        <Control title="PEEP" id="3163" component="ventilator" user_visible="true"/>
+        <Control title="PC Flow Termination" id="3166" component="ventilator" user_visible="true"/>
+        <Control title="Flow Cycle" id="3167" component="ventilator" user_visible="true"/>
+        <Control title="Time Cycle" id="3168" component="ventilator" user_visible="true"/>
+        <Control title="Rise Time" id="3169" component="ventilator" user_visible="true"/>
+        <Control title="Leak Compensation" id="3171" component="ventilator" user_visible="true"/>
+        <Control title="Sigh" id="3172" component="ventilator" user_visible="true"/>
+        <Control title="Apnea Rate" id="3170" component="ventilator" user_visible="true"/>
+        <Control title="O2 Flow Equivalent" id="3188" component="oxygen" user_visible="true"/>
+        <Control title="FiO2" id="3189" component="oxygen" user_visible="true"/>
+        <Control title="Vacuum" id="55" component="suction" user_visible="true"/>
+        <Control title="Nebulizer Duration" id="57" component="nebulizer" user_visible="true"/>
+    </ControlList>
+    <MonitorList>
+        <Monitor title="MAP" id="12008" component="ventilator" user_visible="true"/>
+        <Monitor title="PIP" id="12009" component="ventilator" user_visible="true"/>
+        <Monitor title="PEEP" id="12010" component="ventilator" user_visible="true"/>
+        <Monitor title="I:E Ratio" id="12011" component="ventilator" user_visible="true"/>
+        <Monitor title="Vte" id="12012" component="ventilator" user_visible="true"/>
+        <Monitor title="Minute Volume" id="12014" component="ventilator" user_visible="true"/>
+        <Monitor title="Breath Rate" id="12015" component="ventilator" user_visible="true"/>
+        <Monitor title="Leak Flow" id="12017" component="ventilator" user_visible="true"/>
+        <Monitor title="% Patient Triggered" id="12018" component="ventilator" user_visible="true"/>
+        <Monitor title="FiO2" id="12019" component="oxygen" user_visible="true"/>
+        <Monitor title="Cough Peak Flow" id="12024" component="cough" user_visible="true"/>
+        <Monitor title="Cough Volume" id="12025" component="cough" user_visible="true"/>
+        <Monitor title="Cough Cycles" id="12026" component="cough" user_visible="true"/>
+        <Monitor title="System Usage" id="12001" component="maintenance" user_visible="false"/>
+        <Monitor title="O2 Concentrator Usage" id="12071" component="maintenance" user_visible="false"/>
+        <Monitor title="Pump Usage" id="12003" component="maintenance" user_visible="false"/>
+        <Monitor title="VPSA Usage" id="12002" component="maintenance" user_visible="false"/>
+        <Monitor title="Selected Power Source" id="12100" component="maintenance" user_visible="false"/>
+        <Monitor title="Phase 4 Speed" id="12101" component="maintenance" user_visible="false"/>
+        <Monitor title="Battery ASOC" id="12102" component="maintenance" user_visible="false"/>
+        <Monitor title="Battery BSOC" id="12103" component="maintenance" user_visible="false"/>
+        <Monitor title="Charge Status" id="12104" component="maintenance" user_visible="false"/>
+        <Monitor title="Error Status" id="12105" component="maintenance" user_visible="false"/>
+    </MonitorList>
+    <EventList>
+        <Event title="Alarm Triggered" id="6000" component="contextual" user_visible="true">
+            <Detail title="Alarm Type" key="mAlarmId" display="lookup" user_visible="true"/>
+            <Detail title="Limit" key="mLimit" display="contextual" user_visible="true"/>
+            <Detail title="Measured" key="mMeasured" display="contextual" user_visible="false"/>
+            <Detail title="Divisor" key="mDivisor" display="n/a" user_visible="false"/>
+            <Detail title="Fault ID" key="mFaultId" display="direct" user_visible="false"/>
+        </Event>
+        <Event title="Audio Pause Start" id="6001" component="system" user_visible="true"/>
+        <Event title="Alarm Log Clear" id="6002" component="system" user_visible="true"/>
+        <Event title="Vent Powered Off" id="6003" component="system" user_visible="true"/>
+        <Event title="Vent Powered On" id="6004" component="system" user_visible="true"/>
+        <Event title="Prescription Change" id="6005" component="system" user_visible="true">
+            <Detail title="Old Label" key="oldLabel" display="preset" user_visible="true"/>
+            <Detail title="New Label" key="newLabel" display="preset" user_visible="true"/>
+        </Event>
+        <Event title="Control Change" id="6006" component="contextual" user_visible="true">
+            <Detail title="Control" key="controlId" display="lookup" user_visible="true"/>
+            <Detail title="Old Label" key="paramSetId" display="n/a" user_visible="false"/>
+            <!-- Additional details are enumerated in the ControlDetails section -->
+        </Event>
+        <Event title="Control Snapshot" id="6007" component="system" user_visible="false"/>
+        <Event title="Dongle Inserted" id="6008" component="system" user_visible="true">
+            <Detail title="Dongle Type" key="mDongleType" display="direct" user_visible="true"/>
+        </Event>
+        <Event title="Dongle Removed" id="6009" component="system" user_visible="true">
+            <Detail title="Dongle Type" key="mDongleType" display="direct" user_visible="true"/>
+        </Event>
+        <Event title="USB Inserted" id="6010" component="system" user_visible="true">
+            <Detail title="Vendor ID" key="mVID" display="direct" user_visible="true"/>
+            <Detail title="Product ID" key="mPID" display="direct" user_visible="true"/>
+            <Detail title="Class ID" key="mClassID" display="direct" user_visible="true"/>
+        </Event>
+        <Event title="USB Removed" id="6011" component="system" user_visible="true">
+            <Detail title="Vendor ID" key="mVID" display="direct" user_visible="true"/>
+            <Detail title="Product ID" key="mPID" display="direct" user_visible="true"/>
+            <Detail title="Class ID" key="mClassID" display="direct" user_visible="true"/>
+        </Event>
+        <Event title="Access Code Used" id="6012" component="system" user_visible="true"/>
+        <Event title="Factory Reset" id="6013" component="system" user_visible="true"/>
+        <Event title="Therapy Start" id="6014" component="contextual" user_visible="true">
+            <Detail title="Therapy" key="mTherapyID" display="lookup" user_visible="true"/>
+        </Event>
+        <Event title="Therapy Stop" id="6015" component="contextual" user_visible="true">
+            <Detail title="Therapy" key="mTherapyID" display="lookup" user_visible="true"/>
+        </Event>
+        <Event title="Pre-Use Test" id="6016" component="system" user_visible="true">
+            <!-- omitted fields will not be displayed, but will still be used as specified in divisor and units attributes. -->
+            <Detail title="Result" key="mResult" display="direct" user_visible="true"/>
+            <Detail title="Resistance B" key="mResistB" display="direct" user_visible="true"/>
+            <Detail title="Resistance A" key="mResistB" display="direct" user_visible="true"/>
+            <Detail title="Compliance" key="mCompli" display="scaledUnits" divisor="mCompliDiv" units="mCompliUnit" user_visible="true"/>
+            <Detail title="Kleak" key="mKleak" display="scaledUnits" divisor="mKleakDiv" units="mKleakUnit" user_visible="true"/>
+            <Detail title="Mouthpiece Flow" key="mpflow" display="scaledUnits" divisor="mpflowDiv" units="mpflowUnit" user_visible="true"/>
+            <Detail title="Duck Valve Disconnect" key="mO2DisPdif" display="scaledUnits" divisor="mO2DisPdifDiv" units="mO2DisPdifUnit" user_visible="true"/>
+            <Detail title="Duck Valve Connect" key="mO2ConPdif" display="scaledUnits" divisor="mO2ConPdifDiv" units="mO2ConPdifUnit" user_visible="true"/>
+            <Detail title="Cough Valve Flow" key="mCVFailedFlow" display="scaledUnits" divisor="mCVFailedDiv" units="mCVFailedUnit" user_visible="true"/>
+            <Detail title="Cough Valve Flow Limit" key="mCVLimitFlow" display="scaledUnits" divisor="mCVLimitDiv" units="mCVLimitUnit" user_visible="true"/>
+        </Event>
+        <Event title="Power Source Changed" id="6017" component="system" user_visible="true"/>
+        <Event title="Battery Installed" id="6018" component="system" user_visible="true">
+            <Detail title="Serial Number" key="mSerial" display="direct" user_visible="true"/>
+            <Detail title="Absolute Charge" key="mAbsChg" display="direct" user_visible="true"/>
+            <Detail title="Bay" key="mBay" display="direct" user_visible="true"/>
+        </Event>
+        <Event title="Battery Removed" id="6019" component="system" user_visible="true">
+            <Detail title="Serial Number" key="mSerial" display="direct" user_visible="true"/>
+            <Detail title="Absolute Charge" key="mAbsChg" display="direct" user_visible="true"/>
+            <Detail title="Bay" key="mBay" display="direct" user_visible="true"/>
+        </Event>
+        <Event title="Battery Removed" id="6019" component="system" user_visible="true">
+            <Detail title="Serial Number" key="mSerial" display="direct" user_visible="true"/>
+            <Detail title="Absolute Charge" key="mAbsChg" display="direct" user_visible="true"/>
+            <Detail title="Bay" key="mBay" display="direct" user_visible="true"/>
+        </Event>
+        <Event title="Charge Complete" id="6020" component="system" user_visible="true">
+            <Detail title="Serial Number" key="mSerial" display="direct" user_visible="true"/>
+            <Detail title="Absolute Charge" key="mAbsChg" display="direct" user_visible="true"/>
+            <Detail title="Bay" key="mBay" display="direct" user_visible="true"/>
+        </Event>
+        <Event title="Network Connected" id="6021" component="system" user_visible="true">
+            <Detail title="Adapter ID" key="mAdapterId" display="direct" user_visible="true"/>
+        </Event>
+        <Event title="Network Disconnected" id="6022" component="system" user_visible="true">
+            <Detail title="Adapter ID" key="mAdapterId" display="direct" user_visible="true"/>
+        </Event>
+        <Event title="Service Accessed" id="6023" component="system" user_visible="true">
+            <Detail title="Port ID" key="mPortId" display="direct" user_visible="true"/>
+        </Event>
+        <Event title="Software Updated" id="6024" component="system" user_visible="true">
+            <Detail title="Old Version" key="mOldVers" display="direct" user_visible="true"/>
+            <Detail title="New Version" key="mNewVers" display="direct" user_visible="true"/>
+        </Event>
+        <Event title="System Reboot" id="6025" component="system" user_visible="true"/>
+        <Event title="Audio Pause End" id="6026" component="system" user_visible="true"/>
+        <Event title="Power Snapshot" id="6027" component="maintenance" user_visible="false"/>
+        <Event title="Alarm Resolved" id="6028" component="contextual" user_visible="true">
+            <Detail title="Alarm Type" key="mAlarmId" display="lookup" user_visible="true"/>
+            <Detail title="Fault ID" key="mFaultId" display="direct" user_visible="false"/>
+        </Event>
+    </EventList>
+</VocsnDefinitions>

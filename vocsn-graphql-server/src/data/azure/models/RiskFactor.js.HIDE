@@ -1,0 +1,21 @@
+/**
+ * Class representing an Azure Table Storage "RiskFactor" table entity.
+ * @param e - An entity from Azure Table Storage results.
+ */
+class RiskFactor {
+  constructor(e) {
+    if (e) {
+      const partitionKey = e.PartitionKey._;
+      const rowKey = e.RowKey._;
+      const timestamp = e.Timestamp._;
+
+      this.id = `${partitionKey}_${rowKey}`;
+      this.timestamp = timestamp;
+      this.facilityId = e.FacilityID._;
+      this.riskFactorId = e.RiskFactorID._;
+      this.label = e.Label._;
+    }
+  }
+}
+
+export default RiskFactor;

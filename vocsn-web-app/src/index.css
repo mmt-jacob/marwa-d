@@ -1,0 +1,19 @@
+body {
+  position: absolute;;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#root {
+  height: 100%;
+}
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}

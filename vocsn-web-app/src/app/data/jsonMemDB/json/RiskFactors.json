@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "facilityId": "CAVN005",
+    "value": "age85Plus",
+    "label": "Age 85+"
+  },
+  {
+    "id": 1,
+    "facilityId": "CAVN005",
+    "value": "sixInchIncision",
+    "label": "6\" Incision"
+  },
+  {
+    "id": 2,
+    "facilityId": "CAVN005",
+    "value": "antiCoagulant",
+    "label": "Anti-coagulant"
+  },
+  {
+    "id": 3,
+    "facilityId": "CAVN005",
+    "value": "osteoporosis",
+    "label": "Osteoporosis"
+  }
+]
