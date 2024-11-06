@@ -2,7 +2,7 @@
 
 ######################################
 ##                                  ##
-##  VOCSN Multi-View Report System  ##
+##          Report System           ##
 ##          GraphQL Server          ##
 ##                                  ##
 ######################################
@@ -24,17 +24,17 @@ cd "$path"
 sudo python3 ../update_config.py ../.env.conf
 
 # Stop existing service if its running
-if systemctl is-active --quiet mvr-server
+if systemctl is-active --quiet marwa-server
 then
-    echo "Stopping mvr-server service"
-    sudo systemctl stop mvr-server
+    echo "Stopping marwa-server service"
+    sudo systemctl stop marwa-server
 fi
 
 # Rebuild server
 ./server-startup.sh force
 
-# Start mvr-server service
-echo "Enabling mvr-server service"
-sudo systemctl enable mvr-server
-echo "Starting mvr-server service"
-sudo systemctl start mvr-server
+# Start marwa-server service
+echo "Enabling marwa-server service"
+sudo systemctl enable marwa-server
+echo "Starting marwa-server service"
+sudo systemctl start marwa-server

@@ -2,7 +2,7 @@
 
 ######################################
 ##                                  ##
-##  VOCSN Multi-View Report System  ##
+##           Report System          ##
 ##           React Client           ##
 ##                                  ##
 ######################################
@@ -17,6 +17,6 @@ if [[ $(/usr/bin/id -u) -ne 0 ]]; then
 fi
 
 # Stop NGINX server
-echo "Stopping Multi-View Report React Client - Production"
+echo "Stopping Report React Client - Production"
 echo "Stopping NGINX server"
 sudo nginx -s stop

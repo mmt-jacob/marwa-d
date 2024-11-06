@@ -2,7 +2,7 @@
 
 ######################################
 ##                                  ##
-##  VOCSN Multi-View Report System  ##
+##           Report System          ##
 ##           React Client           ##
 ##                                  ##
 ######################################
@@ -25,17 +25,17 @@ cd "$path"
 sudo python3 ../update_config.py ../.env.conf
 
 # Stop existing service if its running
-if systemctl is-active --quiet mvr-client
+if systemctl is-active --quiet marwa-client
 then
-    echo "Stopping mvr-client service"
-    sudo systemctl stop mvr-client
+    echo "Stopping marwa-client service"
+    sudo systemctl stop marwa-client
 fi
 
 # Rebuild web app
 ./client-startup.sh force
 
-# Start mvr-client service
-echo "Enabling mvr-client service"
-sudo systemctl enable mvr-client
-echo "Starting mvr-client service"
-sudo systemctl start mvr-client
+# Start marwa-client service
+echo "Enabling marwa-client service"
+sudo systemctl enable marwa-client
+echo "Starting marwa-client service"
+sudo systemctl start marwa-client

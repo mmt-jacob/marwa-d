@@ -1,18 +1,18 @@
 [Unit]
-Description=Multi-View Reports configuration update from database
+Description=Reports configuration update from database
 After=network.target
-Before=mvr-server.service
-Before=mvr-client.service
-Before=mvr-reports.service
+Before=marwa-server.service
+Before=marwa-client.service
+Before=marwa-reports.service
 
 [Service]
 Type=simple
 User=ventec
 RootDirectory=/
-WorkingDirectory=/home/ventec/vocsn-web
-ExecStart=/home/ventec/vocsn-web/mvr-update-config
+WorkingDirectory=/home/marwa
+ExecStart=/home/marwa/marwa-update-config
 
 [Install]
 WantedBy=multi-user.target
-WantedBy=mvr-server.service
-WantedBy=mvr-reports.service
+WantedBy=marwa-server.service
+WantedBy=marwa-reports.service

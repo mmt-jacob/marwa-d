@@ -2,13 +2,13 @@
 
 ######################################
 ##                                  ##
-##  VOCSN Multi-View Report System  ##
+##         Report System            ##
 ##         Report Generator         ##
 ##                                  ##
 ######################################
 
 # Stops python daemon managing report generator
-# Stops mvr-reports system service
+# Stops marwa-reports system service
 
 # Require root privileges
 if [[ $(/usr/bin/id -u) -ne 0 ]]; then
@@ -16,10 +16,10 @@ if [[ $(/usr/bin/id -u) -ne 0 ]]; then
     exit
 fi
 
-# Stop mvr-reports service
+# Stop marwa-reports service
 echo "Stopping Multi-View Report Generator - Production"
-echo "Disabling mvr-reports service on startup"
-sudo systemctl disable mvr-reports
-echo "Stopping mvr-reports service"
-sudo systemctl stop mvr-reports
+echo "Disabling marwa-reports service on startup"
+sudo systemctl disable marwa-reports
+echo "Stopping marwa-reports service"
+sudo systemctl stop marwa-reports
 

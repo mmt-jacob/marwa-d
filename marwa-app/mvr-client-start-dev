@@ -2,7 +2,7 @@
 
 ######################################
 ##                                  ##
-##  VOCSN Multi-View Report System  ##
+##           Report System          ##
 ##           React Client           ##
 ##                                  ##
 ######################################
@@ -12,7 +12,7 @@
 # Monitors source files and automatically restarts on changes
 
 # Start serving React client in node
-echo "Starting Multi-View React Client - Development"
-cd ~/vocsn-web/client
+echo "Starting MA React Client - Development"
+cd ~/marwa/client
 yarn
 yarn start

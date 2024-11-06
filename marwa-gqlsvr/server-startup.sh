@@ -2,7 +2,7 @@
 
 ######################################
 ##                                  ##
-##  VOCSN Multi-View Report System  ##
+##    Report System                 ##
 ##   GraphQL Server Prod. Startup   ##
 ##                                  ##
 ######################################
@@ -79,7 +79,7 @@ then
 
   # Build node dependencies and compile code
   echo "Rebuilding GraphQL Server"
-  cd ~/vocsn-web/server
+  cd ~/marwa/server
   rm node_modules -r
   yarn install --production
   yarn build

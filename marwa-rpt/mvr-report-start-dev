@@ -2,7 +2,7 @@
 
 ######################################
 ##                                  ##
-##  VOCSN Multi-View Report System  ##
+##         Report System            ##
 ##         Report Generator         ##
 ##                                  ##
 ######################################
@@ -15,5 +15,5 @@
 
 # Start serving React client in node
 echo "Starting Multi-View Report Generator - Development"
-cd ~/vocsn-web/reports
+cd ~/marwa/reports
 python3 report_generator_d.py

@@ -2,7 +2,7 @@
 
 ######################################
 ##                                  ##
-##  VOCSN Multi-View Report System  ##
+##          Report System           ##
 ##          GraphQL Server          ##
 ##                                  ##
 ######################################
@@ -13,6 +13,6 @@
 
 # Build node dependencies and compile code
 echo "Starting Multi-View GraphQL Server - Development"
-cd ~/vocsn-web/server
+cd ~/marwa/server
 yarn
 yarn start-dev

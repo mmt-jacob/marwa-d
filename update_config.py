@@ -59,7 +59,6 @@ def update_config(env_path):
     c = ""
     c += "##############################" + eol 
     c += "##                          ##" + eol
-    c += "##     VOCSN Multi-View     ##" + eol
     c += "##      Report  System      ##" + eol
     c += "##   Shared Configuration   ##" + eol
     c += "##     (Auto-Generated)     ##" + eol

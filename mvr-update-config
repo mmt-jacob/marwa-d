@@ -14,4 +14,4 @@
 
 
 # Run configuration updater script
-/usr/bin/python3 ~/vocsn-web/update_config.py ~/vocsn-web/.env.conf
+/usr/bin/python3 ~/marwa/update_config.py ~/marwa/.env.conf

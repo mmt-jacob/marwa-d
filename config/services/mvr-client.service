@@ -10,8 +10,8 @@ StartLimitIntervalSec=0
 Type=simple
 User=root
 RootDirectory=/
-WorkingDirectory=/home/ventec/vocsn-web/client
-ExecStart=/home/ventec/vocsn-web/client/client-startup.sh
+WorkingDirectory=/home/marwa/client
+ExecStart=/home/marwa/client/client-startup.sh
 Environment=NODE_ENV=production
 
 [Install]

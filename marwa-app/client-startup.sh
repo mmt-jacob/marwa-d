@@ -2,7 +2,7 @@
 
 ######################################
 ##                                  ##
-##  VOCSN Multi-View Report System  ##
+##     Report System                ##
 ##     React Client Prod Startup    ##
 ##                                  ##
 ######################################

@@ -2,7 +2,7 @@
 
 ######################################
 ##                                  ##
-##  VOCSN Multi-View Report System  ##
+##         Report System            ##
 ##         Report Generator         ##
 ##                                  ##
 ######################################
@@ -12,7 +12,7 @@
 #   - Assemble report batches in zip files
 #   - Perform regular cleanup
 # Uses production credentials from ~/vocsn-web/.env
-# Starts and enables the mvr-reports system service to
+# Starts and enables the marwa-reports system service to
 #   restart the daemon on crash and reboot
 
 # Require root privileges
@@ -22,18 +22,18 @@ if [[ $(/usr/bin/id -u) -ne 0 ]]; then
 fi
 
 # Update configuration
-sudo python3 /home/ventec/vocsn-web/update_config.py "/home/ventec/vocsn-web/.env.conf"
+sudo python3 /home/marwa/update_config.py "/home/marwa/.env.conf"
 
 # Stop existing service if its running
-if systemctl is-active --quiet mvr-reports
+if systemctl is-active --quiet marwa-reports
 then
-    echo "Stopping mvr-reports service"
-    sudo systemctl stop mvr-reports
+    echo "Stopping marwa-reports service"
+    sudo systemctl stop marwa-reports
 fi
 
-# Start mvr-reports service
-echo "Starting Multi-View Report Generator - Production"
-echo "Enabling mvr-reports service"
-sudo systemctl enable mvr-reports
-echo "Starting mvr-reports service"
-sudo systemctl start mvr-reports
+# Start marwa-reports service
+echo "Starting Report Generator - Production"
+echo "Enabling marwa-reports service"
+sudo systemctl enable marwa-reports
+echo "Starting marwa-reports service"
+sudo systemctl start marwa-reports
