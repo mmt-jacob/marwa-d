@@ -13,10 +13,10 @@ const fs = require('fs');
 // import { apolloUploadExpress } from 'graphql-upload';
 
 // import logger from 'winston';
-import { initLogger, logger } from './logger';
-import { GQL_HOST, GQL_PORT, WHITELIST, SYS_VER, MOD_VER, isProdEnv } from './config';
-import { typeDefs } from './graphql/schema';
-import resolvers from './graphql/resolvers';
+import { initLogger, logger } from './logger.js';
+import { GQL_HOST, GQL_PORT, WHITELIST, SYS_VER, MOD_VER, isProdEnv } from './config.js';
+import { typeDefs } from './graphql/schema.js';
+import resolvers from './graphql/resolvers.js';
 // import { apolloUploadExpress } from 'apollo-upload-server'
 
 

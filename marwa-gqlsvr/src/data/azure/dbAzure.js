@@ -2,14 +2,14 @@ import 'babel-polyfill';
 import azure from 'azure-storage';
 import logger from 'winston';
 
-import { TABLE_NAME, TABLE_KEY, INACTIVITY_LOGOUT } from '../../config';
-import FileUpload from './models/FileUpload';
+import { TABLE_NAME, TABLE_KEY, INACTIVITY_LOGOUT } from '../../config.js';
+import FileUpload from './models/FileUpload.js';
 
 const TAG = 'dbAzure';
 const expireDays = 14;
 
 import { getNewID, getGuestKey } from './id_generator.js';
-import { sendSMTP } from "../../email";
+import { sendSMTP } from "../../email.js";
 
 /*
  ********** VOCSN Functions **********
