@@ -1,9 +1,9 @@
 [Unit]
 Description=GraphQL Server
-Wants=mvr-update.service
-Requires=mvr-update.service
+Wants=marwa-update.service
+Requires=marwa-update.service
 After=network.target
-After=mvr-update.service
+After=marwa-update.service
 StartLimitIntervalSec=0
 
 [Service]
