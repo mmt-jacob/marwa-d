@@ -1,10 +1,10 @@
 {
-  "name": "vocsn-client",
-  "sys_version": "1.01.01",
-  "mod_version": "1.01.01",
+  "name": "marwa-client",
+  "sys_version": "2.00.01",
+  "mod_version": "2.00.01",
   "private": true,
-  "description": "VOCSN Reports Web App",
-  "author": "John Dorian, Michael J. Offenbecher",
+  "description": "Reports Web App",
+  "author": "Testing",
   "license": "ISC",
   "dependencies": {
     "@material-ui/core": "^4.8.1",
