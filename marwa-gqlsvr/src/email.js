@@ -54,7 +54,7 @@ const sendSMTP = async (fromName, subject, toAddress, link, fileName, sendDate, 
                 text: textContent,
                 html: htmlContent,
                 attachments: [{
-                    filename: 'VOCSN.png',
+                    filename: 'ma.png',
                     path: './src/resources/email_logo.png',
                     cid: 'logo@ventec.image'
                 }]
