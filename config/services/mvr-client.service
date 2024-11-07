@@ -1,5 +1,5 @@
 [Unit]
-Description=Multi-View React Client
+Description=React Client
 Wants=marwa-update.service
 Requires=marwa-update.service
 After=network.target
